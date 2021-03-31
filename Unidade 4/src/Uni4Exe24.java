@@ -16,5 +16,6 @@ public class Uni4Exe24 {
 
 
         System.out.println("Hello, World!");
+        tec.close();
     }
 }

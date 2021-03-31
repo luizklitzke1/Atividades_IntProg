@@ -13,5 +13,6 @@ public class Uni4Exe14 {
 
 
         System.out.println("Hello, World!");
+        tec.close();
     }
 }
