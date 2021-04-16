@@ -17,11 +17,10 @@ public class Uni4Exe03 {
         System.out.println("Informe o segundo valor:");
         int valor2 = tec.nextInt();
 
-        if (valor1 > valor2) {
+        if (valor1 > valor2) 
             System.out.println("O primeiro valor (" + valor1 + ") é maior que o segundo (" + valor2 + ").");
-        } else {
+        else 
             System.out.println("O segundo valor (" + valor2 + ") é maior que o primeiro (" + valor1 + ").");
-        }
 
         tec.close();
 

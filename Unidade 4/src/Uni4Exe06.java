@@ -18,18 +18,17 @@ public class Uni4Exe06 {
         char caractere = tec.next().charAt(0);
         caractere = Character.toUpperCase(caractere);
 
-        if (caractere == 'M') {
+        if (caractere == 'M')
             System.out.println("Masculino");
-        } else {
-            if (caractere == 'F') {
+        else 
+        {
+            if (caractere == 'F') 
                 System.out.println("Feminino");
-            } else {
-                if (caractere == 'I') {
+            else
+                if (caractere == 'I')
                     System.out.println("Não Informado");
-                } else {
+                else
                     System.out.println("Entrada Incorreta");
-                }
-            }
         }
 
         tec.close();

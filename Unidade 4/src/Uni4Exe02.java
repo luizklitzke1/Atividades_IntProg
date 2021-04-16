@@ -14,11 +14,11 @@ public class Uni4Exe02 {
         System.out.println("Informe o valor inteiro maior que zero:");
         int valor = tec.nextInt();
 
-        if (valor % 2 == 0) {
+        if (valor % 2 == 0) 
             System.out.println("O valor é par!");
-        } else {
+
+        else 
             System.out.println("O valor é ímpar!");
-        }
 
         tec.close();
 

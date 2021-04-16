@@ -15,13 +15,11 @@ public class Uni4Exe05 {
         System.out.println("A cor é azul?");
         boolean resp = tec.nextBoolean();
 
-        if (resp) {
+        if (resp)
             System.out.println("Sim");
-        } else {
+        else
             System.out.println("Não");
-        }
     
         tec.close();
-
     }
 }

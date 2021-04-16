@@ -29,7 +29,84 @@ public class Uni4Exe27 {
          * 
          */
 
-        System.out.println("Hello, World!");
+        System.out.println("Informe o horário de entrada:");
+        int horaEntrada = tec.nextInt();
+        int minutoEntrada = tec.nextInt();
+
+        System.out.println("Informe o horário de saída:");
+        int horaSaida = tec.nextInt();
+        int minutoSaida = tec.nextInt();
+
+        int horasDuracao = 0;
+        int minutosDuracao = 0;
+        double valorFinal = 0;
+
+        //Eu já tinha feito um tempo atrás no URI convertendo tudo pra minutos pra facilitar
+        //Dessa vez fui fazer com horas separadas pra diferenciar, me arrependi bem rapidinho
+        if (horaSaida < horaEntrada)
+        {
+            if (minutoEntrada < minutoSaida)
+            {
+                horasDuracao = 24 - horaEntrada + horaSaida;
+                minutosDuracao = minutoSaida - minutoEntrada;
+            }
+            else
+            {
+                horasDuracao = 24 - horaEntrada + horaSaida - 1;
+                minutosDuracao = (60 - minutoEntrada) + minutoSaida;
+                if (minutosDuracao == 60)
+                {
+                    minutosDuracao = 69;
+                    ++horasDuracao;
+                }
+            }
+        }
+        else
+        {
+            if (minutoEntrada < minutoSaida)
+            {
+                horasDuracao = horaSaida - horaEntrada;
+                minutosDuracao = minutoSaida - minutoEntrada;
+            }
+            else
+            {
+                horasDuracao = horaSaida - horaEntrada - 1;
+                if (horasDuracao  == -1)
+                    horasDuracao = 23;
+                minutosDuracao = (60 - minutoEntrada) + minutoSaida;
+                if (minutosDuracao == 60)
+                {
+                    minutosDuracao = 0;
+                    ++horasDuracao;
+                }
+            }
+        }
+        
+        if (minutosDuracao > 30)
+            ++horasDuracao; 
+        minutosDuracao = 0;
+
+        switch (horasDuracao)
+        {
+            case 1:
+                valorFinal = 5;
+                break;
+            case 2:
+                valorFinal = 10;
+                break;
+            case 3:
+                valorFinal = 17.5;
+                break;
+            case 4:
+                valorFinal = 25;
+                break;
+            default:
+                valorFinal = 25 + ((horasDuracao - 4) * 10);
+                break;
+        }
+        
+        System.out.println("Horas estacionadas:" + horasDuracao);
+        System.out.println("Valor a pagar: R$:" + valorFinal);
         tec.close();
     }
 }

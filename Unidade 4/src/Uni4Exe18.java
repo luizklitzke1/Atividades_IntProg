@@ -14,8 +14,34 @@ public class Uni4Exe18 {
         exibindo as devidas mensagens. Suponha que todo vencimento ocorre até o dia dez de cada mês e os clientes nunca deixam para pagar no mês seguinte.
         */
 
+        System.out.println("Informe o dia do vencimento");
+        int DiaDoVencimento = tec.nextInt();
 
-        System.out.println("Hello, World!");
+        System.out.println("Informe o dia do pagamento");
+        int DiaDoPagamento = tec.nextInt();
+
+        System.out.println("Informe o valor da prestação");
+        double ValorDaPrestacao = tec.nextDouble();
+
+        int Atraso = DiaDoPagamento - DiaDoVencimento;
+
+        if (Atraso < 1)
+        {
+            System.out.println("O pagamento está em dia!");
+            ValorDaPrestacao = ValorDaPrestacao * .9;
+        }
+        else if (Atraso <= 5)
+        {
+            System.out.println("Feito com até 5 dias! Perdeu o desconto...");
+        }
+        else
+        {
+            System.out.println("Feito após 5 dias! Taxa de 2% ao dia.");
+            ValorDaPrestacao = ValorDaPrestacao * (1 + ((double)(Atraso - 5) / 100) * 2);
+        }
+
+        System.out.println("Valor da prestação: " + ValorDaPrestacao);
+
         tec.close();
     }
 }

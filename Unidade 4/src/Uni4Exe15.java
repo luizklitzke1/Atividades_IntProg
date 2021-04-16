@@ -12,8 +12,18 @@ public class Uni4Exe15 {
        entre 13 e 48 meses, irá conceder 7% de reajuste. O seu algoritmo deve solicitar ao usuário que digite a quantidade de meses que o funcionário foi admitido.
         */
 
+        int mesesAdmitido = tec.nextInt();
 
-        System.out.println("Hello, World!");
+        if (mesesAdmitido < 12)
+        {
+            System.out.println("O reajuste será de 5% !");
+        }
+        else if (mesesAdmitido >= 13 && mesesAdmitido <= 48)
+        {
+            System.out.println("O reajuste será de 7% !");
+        }
+
+        
         tec.close();
     }
 }

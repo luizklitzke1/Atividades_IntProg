@@ -19,14 +19,15 @@ public class Uni4Exe01 {
         System.out.println("Informe a quantidade de horas trabalhadas:");
         double horas = tec.nextDouble();
         System.out.println("Informe o valor por hora:");
-        double valor_hora = tec.nextDouble();
+        double valorHora = tec.nextDouble();
 
-        double salario = horas * valor_hora;
+        double salario = horas * valorHora;
 
-        if (horas > 160) {
-            double horas_extra = horas - 160;
-            double valor_horas_extra = horas_extra * valor_hora * .5;
-            salario += valor_horas_extra;
+        if (horas > 160)
+        {
+            double horasExtra = horas - 160;
+            double valorhorasExtra = horasExtra * valorHora * .5;
+            salario += valorhorasExtra;
         }
 
         System.out.println("O salário final será de: " + salario);

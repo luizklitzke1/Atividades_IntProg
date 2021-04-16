@@ -14,11 +14,10 @@ public class Uni4Exe04 {
         System.out.println("Informe o número:");
         float num = tec.nextFloat();
 
-        if (num > (int) num) {
+        if (num > (int) num)
             System.out.println("Foram informadas casas decimais!");
-        } else {
+        else 
             System.out.println("Não foram informadas casas decimais!");
-        }
 
         tec.close();
 

@@ -16,8 +16,26 @@ public class Uni4Exe19 {
         4, se x for negativo e y, positivo
         */
 
+        System.out.println("Informe o valor X: ");
+        int X = tec.nextInt();
 
-        System.out.println("Hello, World!");
+        System.out.println("Informe o valor Y: ");
+        int Y = tec.nextInt();
+
+        int Quadrante;
+        if (X == 0 && Y == 0)
+            Quadrante = 0;
+        else if (X > 0 && Y > 0)
+            Quadrante = 1;
+        else if (X > 0 && Y < 0)
+            Quadrante = 2;
+        else if (X < 0 && Y < 0)
+            Quadrante = 3;
+        else
+            Quadrante = 4;
+
+        System.out.println("Quadrante: " + Quadrante);
+        
         tec.close();
     }
 }
