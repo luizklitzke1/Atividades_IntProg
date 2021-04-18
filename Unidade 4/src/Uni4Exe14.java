@@ -70,13 +70,9 @@ public class Uni4Exe14 {
         }
 
         if (DataValida)
-        {
             System.out.println("A data é válida!");
-        }
         else
-        {
             System.out.println("A data NÃO é válida!");
-        }
         
         tec.close();
     }

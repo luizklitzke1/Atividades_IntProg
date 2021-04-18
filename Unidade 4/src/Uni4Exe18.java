@@ -31,13 +31,12 @@ public class Uni4Exe18 {
             ValorDaPrestacao = ValorDaPrestacao * .9;
         }
         else if (Atraso <= 5)
-        {
             System.out.println("Feito com até 5 dias! Perdeu o desconto...");
-        }
         else
         {
             System.out.println("Feito após 5 dias! Taxa de 2% ao dia.");
-            ValorDaPrestacao = ValorDaPrestacao * (1 + ((double)(Atraso - 5) / 100) * 2);
+            //Assumi que seja 2% a cada dia contando desde o iníco do praso
+            ValorDaPrestacao = ValorDaPrestacao * (1 + ((double)(Atraso) * 2);
         }
 
         System.out.println("Valor da prestação: " + ValorDaPrestacao);

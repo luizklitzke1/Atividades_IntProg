@@ -25,10 +25,12 @@ public class Uni4Exe06 {
             if (caractere == 'F') 
                 System.out.println("Feminino");
             else
+            {
                 if (caractere == 'I')
                     System.out.println("Não Informado");
                 else
                     System.out.println("Entrada Incorreta");
+            }
         }
 
         tec.close();

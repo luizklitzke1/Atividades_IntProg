@@ -42,7 +42,7 @@ public class Uni4Exe27 {
         double valorFinal = 0;
 
         //Eu já tinha feito um tempo atrás no URI convertendo tudo pra minutos pra facilitar
-        //Dessa vez fui fazer com horas separadas pra diferenciar, me arrependi bem rapidinho
+        //Dessa vez fui fazer com horas separadas pra diferenciar, me arrependi bem rapidinho mas funcionou
         if (horaSaida < horaEntrada)
         {
             if (minutoEntrada < minutoSaida)

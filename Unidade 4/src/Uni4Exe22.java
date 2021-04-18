@@ -15,7 +15,6 @@ public class Uni4Exe22 {
         {
             case 1:
                 Titulo = "Bacharel em Ciência da Computação";
-                
                 break;
             
             case 2:
@@ -27,8 +26,8 @@ public class Uni4Exe22 {
                 break;
                 
         }
+
         System.out.println("Titulo: " + Titulo);
-        
 
         input.close();
     }

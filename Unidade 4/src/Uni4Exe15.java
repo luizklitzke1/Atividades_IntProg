@@ -15,14 +15,11 @@ public class Uni4Exe15 {
         int mesesAdmitido = tec.nextInt();
 
         if (mesesAdmitido < 12)
-        {
             System.out.println("O reajuste será de 5% !");
-        }
         else if (mesesAdmitido >= 13 && mesesAdmitido <= 48)
-        {
             System.out.println("O reajuste será de 7% !");
-        }
-
+        else
+            System.out.println("Não haverá reajuste!");
         
         tec.close();
     }

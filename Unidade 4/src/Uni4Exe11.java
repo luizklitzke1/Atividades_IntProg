@@ -25,14 +25,12 @@ public class Uni4Exe11 {
 
         if (nascimentoPrimeiro == nascimentoSegundo && nascimentoSegundo == nascimentoTerceiro) 
             System.out.println("Eles são TRIGÊMEOS!");
-        else 
-        {
-            if (nascimentoPrimeiro == nascimentoSegundo || nascimentoSegundo == nascimentoTerceiro
-                    || nascimentoTerceiro == nascimentoPrimeiro) 
-                    System.out.println("Eles são GÊMEOS!");
+        else if (nascimentoPrimeiro == nascimentoSegundo 
+                || nascimentoSegundo == nascimentoTerceiro
+                || nascimentoTerceiro == nascimentoPrimeiro) 
+                System.out.println("Eles são GÊMEOS!");
             else
                 System.out.println("Eles são APENAS IRMÃOS!");
-        }
 
         tec.close();
     }

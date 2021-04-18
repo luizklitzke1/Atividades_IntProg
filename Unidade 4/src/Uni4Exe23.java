@@ -40,24 +40,31 @@ public class Uni4Exe23 {
             case 6:
                 NomeMes = "Junho";
                 break;
+
             case 7:
                 NomeMes = "Julho";
                 break;
+
             case 8:
                 NomeMes = "Agosto";
                 break;
+
             case 9:
                 NomeMes = "Setembro";
                 break;
+
             case 10:
                 NomeMes = "Outubro";
                 break;
+
             case 11:
                 NomeMes = "Novembro";
                 break;
+
             case 12:
                 NomeMes = "Dezembro";
                 break;
+                
             default:
                 NomeMes = "Valor inválido!";
                 break;

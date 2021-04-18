@@ -19,45 +19,31 @@ public class Uni4Exe13 {
 
         System.out.println("Informe valor da primeira carta: ");
         int cartaA = tec.nextInt();
-        boolean cartaA_boa = false;
+        boolean cartaABoa = false;
 
-        if (cartaA == 1 || cartaA == 2 || cartaA == 3) {
-            cartaA_boa = true;
-        }
-
+        if (cartaA == 1 || cartaA == 2 || cartaA == 3)
+            cartaABoa = true;
+            
         System.out.println("Informe valor da segunda carta: ");
         int cartaB = tec.nextInt();
-        boolean cartaB_boa = false;
+        boolean cartaBBoa = false;
 
-        if (cartaB == 1 || cartaB == 2 || cartaB == 3) {
-            cartaB_boa = true;
-        }
+        if (cartaB == 1 || cartaB == 2 || cartaB == 3)
+            cartaBBoa = true;
 
         System.out.println("Informe valor da terceira carta: ");
         int cartaC = tec.nextInt();
-        boolean cartaC_boa = false;
+        boolean cartaCBoa = false;
 
-        if (cartaC == 1 || cartaC == 2 || cartaC == 3) {
-            cartaC_boa = true;
-        }
+        if (cartaC == 1 || cartaC == 2 || cartaC == 3)
+            cartaCBoa = true;
 
-        if (cartaA_boa && cartaB_boa && cartaC_boa) {
-
+        if (cartaABoa && cartaBBoa && cartaCBoa)
             System.out.println("NOVE!");
-        } else {
-
-            if (cartaA_boa && cartaB_boa || cartaB_boa && cartaC_boa || cartaA_boa && cartaC_boa) {
-                System.out.println("SEIS!");
-            }
-            else {
-
-                if (cartaA_boa || cartaB_boa || cartaC_boa) {
-
-                    System.out.println("TRUCO!");
-
-                }
-            }
-        }
+        else if (cartaABoa && cartaBBoa || cartaBBoa && cartaCBoa || cartaABoa && cartaCBoa)
+            System.out.println("SEIS!");
+        else if (cartaABoa || cartaBBoa || cartaCBoa)
+            System.out.println("TRUCO!");
 
         tec.close();
     }

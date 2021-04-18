@@ -23,8 +23,8 @@ public class Uni4Exe16 {
         System.out.println("Informe a idade da segunda mulher: ");
         int IdadeMulher2 = tec.nextInt();
 
-        int IdadeHomemMaisVelho ;
-        int IdadeHomemMaisNovo ;
+        int IdadeHomemMaisVelho;
+        int IdadeHomemMaisNovo;
         if (IdadeHome1 > IdadeHome2)
         {
             IdadeHomemMaisVelho = IdadeHome1;

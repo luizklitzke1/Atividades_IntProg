@@ -16,7 +16,6 @@ public class Uni4Exe02 {
 
         if (valor % 2 == 0) 
             System.out.println("O valor é par!");
-
         else 
             System.out.println("O valor é ímpar!");
 

@@ -14,6 +14,7 @@ public class Uni4Exe07 {
          * da carta, em gramas, determine o custo do selo.
          */
 
+        System.out.println("Informe o peso: ");
         double peso = tec.nextDouble();
         double preco = 0;
 

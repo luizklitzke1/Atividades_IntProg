@@ -1,10 +1,12 @@
 import java.util.Scanner;
+import java.text.DecimalFormat;
 
 public class Uni4Exe01 {
 
     public static void main(String[] args) throws Exception {
 
         Scanner tec = new Scanner(System.in);
+        DecimalFormat df_2 = new DecimalFormat("0.00");
 
         /*
          * Uni4Exe01.java - A jornada de trabalho semanal de um funcionário é de 40
@@ -30,7 +32,7 @@ public class Uni4Exe01 {
             salario += valorhorasExtra;
         }
 
-        System.out.println("O salário final será de: " + salario);
+        System.out.println("O salário final será de R$ " + df_2.format(salario));
         
         tec.close();
     }
