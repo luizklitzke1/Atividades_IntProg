@@ -28,9 +28,9 @@ public class Uni4Exe11 {
         else if (nascimentoPrimeiro == nascimentoSegundo 
                 || nascimentoSegundo == nascimentoTerceiro
                 || nascimentoTerceiro == nascimentoPrimeiro) 
-                System.out.println("Eles são GÊMEOS!");
-            else
-                System.out.println("Eles são APENAS IRMÃOS!");
+            System.out.println("Eles são GÊMEOS!");
+        else
+            System.out.println("Eles são APENAS IRMÃOS!");
 
         tec.close();
     }

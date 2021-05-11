@@ -1,0 +1,294 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch LuizGustavoKlitzke_1",
+            "request": "launch",
+            "mainClass": "LuizGustavoKlitzke_1",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch LuizGustavoKlitzke_2",
+            "request": "launch",
+            "mainClass": "LuizGustavoKlitzke_2",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch URI1035",
+            "request": "launch",
+            "mainClass": "URI1035",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch URI1037",
+            "request": "launch",
+            "mainClass": "URI1037",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch URI1041",
+            "request": "launch",
+            "mainClass": "URI1041",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch URI1046",
+            "request": "launch",
+            "mainClass": "URI1046",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni4Exe01",
+            "request": "launch",
+            "mainClass": "Uni4Exe01",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni4Exe02",
+            "request": "launch",
+            "mainClass": "Uni4Exe02",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni4Exe03",
+            "request": "launch",
+            "mainClass": "Uni4Exe03",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni4Exe04",
+            "request": "launch",
+            "mainClass": "Uni4Exe04",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni4Exe05",
+            "request": "launch",
+            "mainClass": "Uni4Exe05",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni4Exe06",
+            "request": "launch",
+            "mainClass": "Uni4Exe06",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni4Exe07",
+            "request": "launch",
+            "mainClass": "Uni4Exe07",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni4Exe08",
+            "request": "launch",
+            "mainClass": "Uni4Exe08",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni4Exe09",
+            "request": "launch",
+            "mainClass": "Uni4Exe09",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni4Exe10",
+            "request": "launch",
+            "mainClass": "Uni4Exe10",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni4Exe11",
+            "request": "launch",
+            "mainClass": "Uni4Exe11",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni4Exe12",
+            "request": "launch",
+            "mainClass": "Uni4Exe12",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni4Exe13",
+            "request": "launch",
+            "mainClass": "Uni4Exe13",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni4Exe14",
+            "request": "launch",
+            "mainClass": "Uni4Exe14",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni4Exe15",
+            "request": "launch",
+            "mainClass": "Uni4Exe15",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni4Exe16",
+            "request": "launch",
+            "mainClass": "Uni4Exe16",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni4Exe17",
+            "request": "launch",
+            "mainClass": "Uni4Exe17",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni4Exe18",
+            "request": "launch",
+            "mainClass": "Uni4Exe18",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni4Exe19",
+            "request": "launch",
+            "mainClass": "Uni4Exe19",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni4Exe20",
+            "request": "launch",
+            "mainClass": "Uni4Exe20",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni4Exe21",
+            "request": "launch",
+            "mainClass": "Uni4Exe21",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni4Exe22",
+            "request": "launch",
+            "mainClass": "Uni4Exe22",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni4Exe23",
+            "request": "launch",
+            "mainClass": "Uni4Exe23",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni4Exe24",
+            "request": "launch",
+            "mainClass": "Uni4Exe24",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni4Exe25",
+            "request": "launch",
+            "mainClass": "Uni4Exe25",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni4Exe26",
+            "request": "launch",
+            "mainClass": "Uni4Exe26",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni4Exe27",
+            "request": "launch",
+            "mainClass": "Uni4Exe27",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni5Exe01",
+            "request": "launch",
+            "mainClass": "Uni5Exe01",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni5Exe02",
+            "request": "launch",
+            "mainClass": "Uni5Exe02",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni5Exe03",
+            "request": "launch",
+            "mainClass": "Uni5Exe03",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni5Exe04",
+            "request": "launch",
+            "mainClass": "Uni5Exe04",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni5Exe05",
+            "request": "launch",
+            "mainClass": "Uni5Exe05",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni5Exe06",
+            "request": "launch",
+            "mainClass": "Uni5Exe06",
+            "projectName": "Atividade_URI_ee015f83"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uni5Exe07",
+            "request": "launch",
+            "mainClass": "Uni5Exe07",
+            "projectName": "Atividade_URI_ee015f83"
+        }
+    ]
+}
