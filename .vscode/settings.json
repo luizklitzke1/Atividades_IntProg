@@ -1,7 +1,8 @@
 {
     "java.project.sourcePaths": [
+        "Unidade 5/src",
         "Unidade 4/src",
         "Prova Unidade 4/src",
-        "Unidade 5/src"
+        "Unidade 6/src"
     ]
 }
