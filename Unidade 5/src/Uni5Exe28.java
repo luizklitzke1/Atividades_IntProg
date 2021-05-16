@@ -58,10 +58,10 @@ public class Uni5Exe28 {
         else
             System.out.print("Jota Quest");
 
-        System.out.println("\nTotal votos [1]Nenhum de Nós: " + totalVotos1 + " - " + (100 * totalVotos1 / totalVotos)) ;
-        System.out.println("Total votos [2]CPM22: " + totalVotos2 + " - " + (100 * totalVotos2 / totalVotos));
-        System.out.println("Total votos [3]SKANK:" + totalVotos3 + " - " + (100 * totalVotos3 / totalVotos));
-        System.out.println("Total votos [4]Jota Quest: " + totalVotos4 + " - " + (100 * totalVotos4 / totalVotos));
+        System.out.println("\nTotal votos [1]Nenhum de Nós: " + totalVotos1 + " - " + (100 * totalVotos1 / totalVotos) + "%");
+        System.out.println("Total votos [2]CPM22: " + totalVotos2 + " - " + (100 * totalVotos2 / totalVotos) + "%");
+        System.out.println("Total votos [3]SKANK:" + totalVotos3 + " - " + (100 * totalVotos3 / totalVotos) + "%");
+        System.out.println("Total votos [4]Jota Quest: " + totalVotos4 + " - " + (100 * totalVotos4 / totalVotos) + "%");
         
         tec.close();
     }

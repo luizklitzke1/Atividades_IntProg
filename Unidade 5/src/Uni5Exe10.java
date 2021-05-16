@@ -6,10 +6,23 @@ public class Uni5Exe10 {
 
         Scanner tec = new Scanner(System.in);        
 
-        int numeroTeste = 10000;
-        int quantidade = 0;
+        int quantidadeEncontrada = 0;
+        int potencia = 0;
 
-       
+        for (int numeroTeste = 1000; numeroTeste < 9999; numeroTeste++)
+        {
+            potencia = (numeroTeste / 100) + (numeroTeste % 100);
+
+            if (potencia * potencia == numeroTeste)
+            {
+                quantidadeEncontrada++;
+
+                System.out.println("[" + quantidadeEncontrada + "] " + numeroTeste);
+
+                if (quantidadeEncontrada == 10)
+                    break;
+            }
+        }
        
         tec.close();
     }
