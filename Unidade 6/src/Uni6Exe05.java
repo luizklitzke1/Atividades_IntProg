@@ -3,26 +3,24 @@ import java.util.Vector;
 
 public class Uni6Exe05{
 
-    private void lerValoresVetor(String vetor[]) 
+    private void lerValoresVetor(String vetor[], Scanner teclado) 
     {
-        Scanner tec = new Scanner(System.in);
-
         System.out.println("Responda com SIM, NÃO ou IND (indiferente)\n");
 
         System.out.print("Gosta de música sertaneja? ");
-        vetor[0] = tec.next();
+        vetor[0] = teclado.next();
 
         System.out.print("Gosta de futebol? ");
-        vetor[1] = tec.next();
+        vetor[1] = teclado.next();
 
         System.out.print("Gosta de seriados? ");
-        vetor[2] = tec.next();
+        vetor[2] = teclado.next();
 
         System.out.print("Gosta de redes sociais? ");
-        vetor[3] = tec.next();
+        vetor[3] = teclado.next();
 
         System.out.print("Gosta da Oktoberfest? ");
-        vetor[4] = tec.next();
+        vetor[4] = teclado.next();
     }
 
     private double calculaAfinidade(String respostasRapaz[], String respostasMoca[]) 
@@ -46,14 +44,16 @@ public class Uni6Exe05{
     
     private Uni6Exe05() 
     {
+        Scanner tec = new Scanner(System.in);
+
         String respostasRapaz[] = new String[5];
         String respostasMoca[] = new String[5];
 
         System.out.println("Informe as repostas do rapaz: ");
-        lerValoresVetor(respostasRapaz);
+        lerValoresVetor(respostasRapaz, tec);
 
         System.out.println("Informe as respostas da moça: ");
-        lerValoresVetor(respostasMoca);
+        lerValoresVetor(respostasMoca, tec);
 
         double afinidade = calculaAfinidade(respostasRapaz, respostasMoca);
 
@@ -69,6 +69,8 @@ public class Uni6Exe05{
             System.out.println("Melhor não perder tempo");
         else if (afinidade == -10)
             System.out.println("Vocês se odeiam!");
+
+        tec.close();
     }
 
     public static void main(String[] args) 

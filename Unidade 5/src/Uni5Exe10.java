@@ -29,7 +29,7 @@ public class Uni5Exe10 {
         potencia = 0;
         int metade = 0;
 
-        //Nao necessariamente seguindo o apresentando em aula, porem resolvendo o proposto
+        //Nao seguindo/utilizando o apresentando em aula, porem encontrando os 10 propostos
         System.out.println("\n[Assumindo que seja a potencia de (metade + metade) de um real qualquer]");
         for (int numeroTeste = 1000; quantidadeEncontrada < 10; numeroTeste++)
         {

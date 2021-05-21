@@ -3,10 +3,8 @@ import java.util.Vector;
 
 public class Uni6Exe04{
 
-    private void lerValoresVetor(double vetor[]) 
-    {
-        Scanner tec = new Scanner(System.in);
-        
+    private void lerValoresVetor(double vetor[], Scanner teclado) 
+    {   
         for (int idx = 0; idx < vetor.length; idx++) 
         {
             System.out.print("[" + idx +  "] Informe o valor: ");
@@ -32,15 +30,17 @@ public class Uni6Exe04{
     
     private Uni6Exe04() 
     {
+        Scanner tec = new Scanner(System.in);
+
         double vetor1[] = new double[10];
         double vetor2[] = new double[10];
         double vetor3[] = new double[10];
 
         System.out.println("Informe os 10 valores do primeiro vetor: ");
-        lerValoresVetor(vetor1);
+        lerValoresVetor(vetor1, tec);
 
         System.out.println("Informe os 10 valores do segundo vetor: ");
-        lerValoresVetor(vetor2);
+        lerValoresVetor(vetor2, tec);
 
         somaVetoresEmTerceiro(vetor1, vetor2, vetor3);
         
@@ -52,6 +52,8 @@ public class Uni6Exe04{
 
         System.out.println("Terceiro Vetor: ");
         escreverValores(vetor3);
+
+        tec.close();
     }
 
     public static void main(String[] args) 

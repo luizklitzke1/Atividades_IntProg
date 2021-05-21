@@ -26,16 +26,16 @@ public class Uni5Exe30 {
         {
             if (valorN + somaEntraram <= tamanhoM)
             {
-                sEntraram += Integer.toString(valorN) + " ";
+                sEntraram += valorN + " ";
                 somaEntraram += valorN;
             }
             else
             {
-                sFora += Integer.toString(valorN) + " ";
+                sFora += valorN + " ";
                 somaNaoEntraram += valorN;
             }
 
-            sTodos += Integer.toString(valorN) + " ";
+            sTodos += valorN + " ";
             valorN -= decrementoK;
         }
 
