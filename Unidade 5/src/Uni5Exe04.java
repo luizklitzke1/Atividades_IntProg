@@ -24,7 +24,7 @@ public class Uni5Exe04 {
             divisor += 2 * (idx + 2);
         }
 
-        System.out.println("Soma da serie: " + somaSerie));
+        System.out.println("Soma da serie: " + somaSerie);
 
         tec.close();
 

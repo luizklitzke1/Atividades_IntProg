@@ -10,7 +10,7 @@ public class Uni5Exe21 {
 
         int anos = 0;
 
-        while (alturaChico > alturaZe)
+        while (alturaChico >= alturaZe)
         {
             alturaChico += .02;
             alturaZe += .03;

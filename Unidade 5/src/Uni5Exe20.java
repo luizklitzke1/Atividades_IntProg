@@ -17,7 +17,7 @@ public class Uni5Exe20 {
 
         int segundosPercorridos = 0;
 
-        while (massa > .5)
+        while (massa >= .5)
         {
             massa /= 2;
 

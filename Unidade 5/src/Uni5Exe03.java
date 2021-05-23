@@ -14,7 +14,7 @@ public class Uni5Exe03 {
 
         for (int idx = 1; idx <= 100; idx++)
         {
-            somaSerie += 1 / idx;
+            somaSerie += 1.0 / idx;
         }
 
         System.out.println("Soma da serie: " + somaSerie);

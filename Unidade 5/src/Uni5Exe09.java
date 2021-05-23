@@ -12,7 +12,7 @@ public class Uni5Exe09 {
             escreva a quantidade de alunos que tem idade acima de 20 anos.
          */
 
-        System.out.print("Informe a quantidad de alunos na turma: ");
+        System.out.print("Informe a Quantidade de alunos na turma: ");
         int quantidadeAlunos = tec.nextInt();
 
         String nomeAluno;

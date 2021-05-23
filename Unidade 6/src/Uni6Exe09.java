@@ -82,7 +82,8 @@ public class Uni6Exe09
 
         for (int i = 0; i < tamanhoVetor; i++)
         {
-            if (notasMulheres[i] > (somaNotas / tamanhoVetor))
+            if (notasMulheres[i] > (somaNotas / tamanhoVetor) &&
+                idadesMulheres[i] > 50)
                 ++quantidadeMulheresMais50MaisMedia;
         }
 

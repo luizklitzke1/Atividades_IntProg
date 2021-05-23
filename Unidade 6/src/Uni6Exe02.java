@@ -10,7 +10,7 @@ public class Uni6Exe02{
         for (int idx = 0; idx < vetor.length; idx++) 
         {
             System.out.print("[" + idx +  "] Informe o valor: ");
-            vetor[idx] = tec.nextInt();
+            vetor[idx] = tec.nextDouble();
         }
 
         tec.close();

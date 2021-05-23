@@ -6,6 +6,8 @@ public class Uni5Exe29 {
 
         Scanner tec = new Scanner(System.in);        
 
+        System.out.print("Informe o valor R$ " );
+
         int val = tec.nextInt();
         int temp = val;
 

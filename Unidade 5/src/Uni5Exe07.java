@@ -13,14 +13,14 @@ public class Uni5Exe07 {
         System.out.print("Informe a quantidad de numeros que deseja informar: ");
         int quantidadeNumeros = tec.nextInt();
 
-        int maiorNumero = 0;
-        int menorNumero = 0;
+        double maiorNumero = 0;
+        double menorNumero = 0;
 
-        int numeroInformado = 0;
+        double numeroInformado = 0;
 
         for (int idx = 0; idx < quantidadeNumeros; idx++)
         {
-            numeroInformado = tec.nextInt();
+            numeroInformado = tec.nextDouble();
 
             if (idx != 0)
             {
