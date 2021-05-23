@@ -65,17 +65,6 @@ public class Uni6Exe08{
         System.out.print("\n");
     }
 
-    private void mostraDadosVetor2(int vetor[])
-    {
-        for (int idx = 0; idx < vetor.length; idx++)
-        {
-            if (vetor[idx] == 0)
-                System.out.print("[]");
-            else
-                System.out.print("[" + vetor[idx]  + "]");
-        }
-        System.out.print("\n");
-    }
     
     private Uni6Exe08() 
     {

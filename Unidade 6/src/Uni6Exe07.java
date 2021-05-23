@@ -19,7 +19,7 @@ public class Uni6Exe07{
             return false;
         }
 
-        int pos = vetor.length;
+        int pos = 0;
 
         for (int idx = 0; idx < vetor.length; idx++) 
         {
@@ -30,22 +30,8 @@ public class Uni6Exe07{
             }
         }
 
-        if (pos == vetor.length)
-        {
-            vetor[pos - 1] = novoValor;
-            return true;
-        }
-
-        int temp = 0;
-
-        for (int idx = pos; idx < vetor.length - 1; idx ++) 
-        {
-            temp = vetor[idx + 1];
-            vetor[idx + 1] = vetor[idx];
-            if (idx + 2 < vetor.length)
-                vetor[idx += 2 ] = temp;
-            
-        }
+        for (int idx = vetor.length - 1; idx > pos ; idx --)
+            vetor[idx] = vetor[idx - 1];    
 
         vetor[pos] = novoValor;
 
@@ -100,6 +86,6 @@ public class Uni6Exe07{
 
     public static void main(String[] args) 
     {
-        new Uni6Exe08();
+        new Uni6Exe07();
     }
 }
