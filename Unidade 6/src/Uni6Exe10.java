@@ -3,22 +3,24 @@ import java.util.Vector;
 
 public class Uni6Exe10
 {
-    private void adicionarValor(int vetor[], Scanner teclado) 
+    private void adicionarValor(int vetor[], int valoresAdicionados, Scanner teclado) 
     {
         System.out.print("Informe o valor para adicionar ao vetor: ");
         int novoValor = teclado.nextInt();
 
-        for (int idx = 0; idx < vetor.length - 1 ; idx++) 
-            vetor[idx] = vetor[idx + 1];
-
-        vetor[vetor.length - 1] = novoValor;
-
-        System.out.print("Valor adicionado com sucesso!");
+        for (int idx = 0; idx < valoresAdicionados ; idx++) 
+        {
+            if (vetor[idx] == 0)
+            {
+                vetor[idx] = novoValor;
+                break;
+            }
+        }    
     }
 
-    private boolean procurarValor(int vetor[], int valor) 
+    private boolean procurarValor(int vetor[], int valor, int valoresAdicionados) 
     {   
-        for (int idx = 0; idx < vetor.length; idx++) 
+        for (int idx = 0; idx < valoresAdicionados; idx++) 
         {
             if (vetor[idx] == valor)
                 return true;
@@ -27,12 +29,12 @@ public class Uni6Exe10
         return false;
     }
 
-    private void alterarValor(int vetor[], Scanner teclado)
+    private void alterarValor(int vetor[], int valoresAdicionados, Scanner teclado)
     {
         System.out.print("Informe o valor para alterar: ");
         int valorAlterar = teclado.nextInt();
 
-        if (!procurarValor(vetor, valorAlterar))
+        if (!procurarValor(vetor, valorAlterar, valoresAdicionados))
         {
             System.out.println("O valor NAO existe no vetor!");
             return;
@@ -41,7 +43,7 @@ public class Uni6Exe10
         System.out.print("Informe o novo valor: ");
         int novoValor = teclado.nextInt();
 
-        for (int idx = 0; idx < vetor.length; idx++) 
+        for (int idx = 0; idx < valoresAdicionados; idx++) 
         {
             if (vetor[idx] == valorAlterar)
             {
@@ -52,12 +54,12 @@ public class Uni6Exe10
 
     }
 
-    private void excluirValor(int vetor[], Scanner teclado)
+    private void excluirValor(int vetor[], int valoresAdicionados, Scanner teclado)
     {
         System.out.print("Informe o valor para excluir: ");
         int valorExcluir = teclado.nextInt();
 
-        if (!procurarValor(vetor, valorExcluir))
+        if (!procurarValor(vetor, valorExcluir, valoresAdicionados))
         {
             System.out.println("O valor NAO existe no vetor!");
             return;
@@ -65,7 +67,7 @@ public class Uni6Exe10
 
         int pos = 0;
 
-        for (int idx = 0; idx < vetor.length; idx++) 
+        for (int idx = 0; idx < valoresAdicionados; idx++) 
         {
             if (vetor[idx] == valorExcluir)
             {
@@ -74,15 +76,15 @@ public class Uni6Exe10
             }
         }
 
-        for (int i = pos; i > 0; i--)
-            vetor[i] = vetor[i - 1];
+        for (int i = pos; i < (vetor.length - 1); i++)
+            vetor[i] = vetor[i + 1];
     }
 
-    private void ordenarValores(int vetor[])
+    private void ordenarValores(int vetor[], int valoresAdicionados)
     {
-        for(int i = 0 ; i < vetor.length;i++)
+        for(int i = 0 ; i < valoresAdicionados; i++)
         {
-            for(int j = i + 1 ; j < vetor.length; j++)
+            for(int j = i + 1 ; j < valoresAdicionados; j++)
             {
                 if(vetor[i] > vetor[j])
                 {
@@ -95,14 +97,11 @@ public class Uni6Exe10
     }
 
 
-    private void mostraDadosVetor(int vetor[])
+    private void mostraDadosVetor(int vetor[], int valoresAdicionados)
     {
-        for (int idx = 0; idx < vetor.length; idx++)
+        for (int idx = 0; idx < valoresAdicionados; idx++)
         {
-            if (vetor[idx] == 0)
-                System.out.print("[]");
-            else
-                System.out.print("[" + vetor[idx]  + "]");
+            System.out.print("[" + vetor[idx]  + "]");
         }
         System.out.print("\n");
     }
@@ -135,15 +134,15 @@ public class Uni6Exe10
                 case 1:
                     if (valoresAdicionados < 50)
                     {
-                        adicionarValor(vetor, tec);
                         ++valoresAdicionados;
+                        adicionarValor(vetor, valoresAdicionados, tec);
                     }
                     break;
 
         	    case 2:
                     System.out.print("Informe o valor para procurar no vetor: ");
                     int valorProcurar = tec.nextInt();
-                    if (procurarValor(vetor, valorProcurar))
+                    if (procurarValor(vetor, valorProcurar, valoresAdicionados))
                         System.out.println("O valor existe no vetor!");
                     else
                         System.out.println("O valor NAO existe no vetor!");
@@ -151,19 +150,20 @@ public class Uni6Exe10
                     break;
 
                 case 3:
-                    alterarValor(vetor, tec);
+                    alterarValor(vetor, valoresAdicionados, tec);
                     break;
 
                 case 4:
-                    excluirValor(vetor, tec);
+                    excluirValor(vetor, valoresAdicionados, tec);
+                    --valoresAdicionados;
                     break;
 
                 case 5:
-                    mostraDadosVetor(vetor);
+                    mostraDadosVetor(vetor, valoresAdicionados);
                     break;
                 
                 case 6:
-                    ordenarValores(vetor);
+                    ordenarValores(vetor, valoresAdicionados);
                     break;
             }
 
