@@ -8,7 +8,7 @@ public class Uni6Exe07{
         return new int[tamanhoVetor];
     }
 
-    private boolean adicionarValor(int vetor[], Scanner teclado) 
+    private boolean adicionarValor(int vetor[], int valoresAdicionados, Scanner teclado) 
     {
         System.out.print("Informe o valor para adicionar ao vetor: ");
         int novoValor = teclado.nextInt();
@@ -19,23 +19,25 @@ public class Uni6Exe07{
             return false;
         }
 
-        int pos = 0;
-
-        for (int idx = 0; idx < vetor.length; idx++) 
-        {
-            if (vetor[idx] > novoValor || vetor[idx]  == 0)
-            {
-                pos = idx;
-                break;
-            }
-        }
-
-        for (int idx = vetor.length - 1; idx > pos ; idx --)
-            vetor[idx] = vetor[idx - 1];    
-
-        vetor[pos] = novoValor;
+        vetor[valoresAdicionados] = novoValor;
 
         return true;
+    }
+
+    private void ordenarValores(int vetor[], int valoresAdicionados)
+    {
+        for(int i = 0 ; i < valoresAdicionados; i++)
+        {
+            for(int j = i + 1 ; j < valoresAdicionados; j++)
+            {
+                if(vetor[i] > vetor[j])
+                {
+                    int temp = vetor[i];
+                    vetor[i] = vetor[j];
+                    vetor[j] = temp;
+                }
+            }
+        }
     }
 
     private boolean procurarValor(int vetor[], int valor) 
@@ -74,12 +76,17 @@ public class Uni6Exe07{
 
         while (valoresAdicionados < tamanhoVetor)
         {
-            if (adicionarValor(vetor, tec))
-            {
+            if (adicionarValor(vetor, valoresAdicionados, tec))
                 valoresAdicionados++;
-                mostraDadosVetor(vetor);
-            }  
         }
+
+        System.out.print("Vetor origem: ");
+        mostraDadosVetor(vetor);
+
+        ordenarValores(vetor, valoresAdicionados);
+
+        System.out.print("Vetor ordenado: ");
+        mostraDadosVetor(vetor);
 
         tec.close();
     }
