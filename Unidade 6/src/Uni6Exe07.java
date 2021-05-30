@@ -13,7 +13,7 @@ public class Uni6Exe07{
         System.out.print("Informe o valor para adicionar ao vetor: ");
         int novoValor = teclado.nextInt();
 
-        if (procurarValor(vetor, novoValor))
+        if (procurarValor(vetor, novoValor, valoresAdicionados))
         {
             System.out.println("O valor já existe no vetor!");
             return false;
@@ -40,9 +40,9 @@ public class Uni6Exe07{
         }
     }
 
-    private boolean procurarValor(int vetor[], int valor) 
+    private boolean procurarValor(int vetor[], int valor, int valoresAdicionados) 
     {   
-        for (int idx = 0; idx < vetor.length; idx++) 
+        for (int idx = 0; idx < valoresAdicionados; idx++) 
         {
             if (vetor[idx] == valor)
                 return true;
@@ -51,15 +51,11 @@ public class Uni6Exe07{
         return false;
     }
 
-    private void mostraDadosVetor(int vetor[])
+    private void mostraDadosVetor(int vetor[], int valoresAdicionados)
     {
-        for (int idx = 0; idx < vetor.length; idx++)
-        {
-            if (vetor[idx] == 0)
-                System.out.print("[]");
-            else
-                System.out.print("[" + vetor[idx]  + "]");
-        }
+        for (int idx = 0; idx < valoresAdicionados; idx++)
+            System.out.print("[" + vetor[idx]  + "]");
+
         System.out.print("\n");
     }
     
@@ -81,12 +77,12 @@ public class Uni6Exe07{
         }
 
         System.out.print("Vetor origem: ");
-        mostraDadosVetor(vetor);
+        mostraDadosVetor(vetor, valoresAdicionados);
 
         ordenarValores(vetor, valoresAdicionados);
 
         System.out.print("Vetor ordenado: ");
-        mostraDadosVetor(vetor);
+        mostraDadosVetor(vetor, valoresAdicionados);
 
         tec.close();
     }

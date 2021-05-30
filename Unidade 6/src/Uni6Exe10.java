@@ -16,6 +16,7 @@ public class Uni6Exe10
                 break;
             }
         }    
+        System.out.println(novoValor + " adicionado no vetor!");
     }
 
     private boolean procurarValor(int vetor[], int valor, int valoresAdicionados) 
@@ -54,7 +55,7 @@ public class Uni6Exe10
 
     }
 
-    private void excluirValor(int vetor[], int valoresAdicionados, Scanner teclado)
+    private boolean excluirValor(int vetor[], int valoresAdicionados, Scanner teclado)
     {
         System.out.print("Informe o valor para excluir: ");
         int valorExcluir = teclado.nextInt();
@@ -62,7 +63,7 @@ public class Uni6Exe10
         if (!procurarValor(vetor, valorExcluir, valoresAdicionados))
         {
             System.out.println("O valor NAO existe no vetor!");
-            return;
+            return false;
         }
 
         int pos = 0;
@@ -78,6 +79,8 @@ public class Uni6Exe10
 
         for (int i = pos; i < (vetor.length - 1); i++)
             vetor[i] = vetor[i + 1];
+
+        return true;
     }
 
     private void ordenarValores(int vetor[], int valoresAdicionados)
@@ -99,6 +102,8 @@ public class Uni6Exe10
 
     private void mostraDadosVetor(int vetor[], int valoresAdicionados)
     {
+        System.out.println("Itens no vetor: ");
+        
         for (int idx = 0; idx < valoresAdicionados; idx++)
         {
             System.out.print("[" + vetor[idx]  + "]");
@@ -137,6 +142,10 @@ public class Uni6Exe10
                         ++valoresAdicionados;
                         adicionarValor(vetor, valoresAdicionados, tec);
                     }
+                    else
+                    {
+                        System.out.println("Nao ha mais espaço no vetor!");
+                    }
                     break;
 
         	    case 2:
@@ -154,8 +163,10 @@ public class Uni6Exe10
                     break;
 
                 case 4:
-                    excluirValor(vetor, valoresAdicionados, tec);
-                    --valoresAdicionados;
+                    if (excluirValor(vetor, valoresAdicionados, tec))
+                    {
+                        --valoresAdicionados;
+                    }   
                     break;
 
                 case 5:

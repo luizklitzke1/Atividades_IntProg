@@ -24,7 +24,7 @@ public class Uni6Exe04{
     {   
         for (int idx = 0; idx < vetor.length; idx++) 
         {
-            System.out.println("[" + idx +  "] "+ vetor[idx]);
+            System.out.print("["+ vetor[idx] + "]");
         }
     }
     
@@ -47,10 +47,10 @@ public class Uni6Exe04{
         System.out.println("Primeiro Vetor: ");
         escreverValores(vetor1);
 
-        System.out.println("Segundo Vetor: ");
+        System.out.println("\nSegundo Vetor: ");
         escreverValores(vetor2);
 
-        System.out.println("Terceiro Vetor: ");
+        System.out.println("\nTerceiro Vetor: ");
         escreverValores(vetor3);
 
         tec.close();

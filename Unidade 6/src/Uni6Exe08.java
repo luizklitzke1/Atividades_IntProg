@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.Vector;
+import java.text.DecimalFormat;
 
 public class Uni6Exe08{
 
@@ -52,23 +53,12 @@ public class Uni6Exe08{
             }
         }
     }
-
-    private void mostraDadosVetor(double vetor[])
-    {
-        for (int idx = 0; idx < vetor.length; idx++)
-        {
-            if (vetor[idx] == 0)
-                System.out.print("[]");
-            else
-                System.out.print("[" + vetor[idx]  + "]");
-        }
-        System.out.print("\n");
-    }
-
     
     private Uni6Exe08() 
     {
         Scanner tec = new Scanner(System.in);
+        DecimalFormat df_2 = new DecimalFormat("0.00");  
+
 
         System.out.print("Informe o tamanho do vetor: ");
         int tamanhoVetor = tec.nextInt();
@@ -92,7 +82,7 @@ public class Uni6Exe08{
             if (frequenciaValores[i] == 0)
                 break;
 
-            System.out.println(valoresUnicos[i] + "                 " + frequenciaValores[i]);
+            System.out.println(df_2.format(valoresUnicos[i]) + "                 " + frequenciaValores[i]);
         }
 
         tec.close();
