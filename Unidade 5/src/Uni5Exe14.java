@@ -57,7 +57,7 @@ public class Uni5Exe14 {
             
         }
         
-        System.out.println("Valor total de compra: " + valorTotalVenda);
+        System.out.println("Valor total de compra: " + valorTotalCompra);
         System.out.println("Valor total de venda: " + valorTotalVenda);
 
         //Nao tenho certeza, mas entendi que o lucro total seja a soma das porcentagens de lucro

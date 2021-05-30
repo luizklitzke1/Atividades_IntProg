@@ -1,12 +1,10 @@
 import java.util.Scanner;
-import java.text.DecimalFormat;
 
 public class Uni5Exe18 {
 
     public static void main(String[] args) throws Exception {
 
         Scanner tec = new Scanner(System.in);      
-        DecimalFormat df_2 = new DecimalFormat("0.00");  
 
         /*
         Foi feita uma pesquisa de audiência de canal de TV em n casas de um determinado bairro de uma cidade, 

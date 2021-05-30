@@ -26,5 +26,7 @@ public class Uni5Exe05 {
                 valorA *= 2;
             }
         }
+
+        tec.close();
     }
 }
